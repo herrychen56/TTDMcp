@@ -1,0 +1,17 @@
+PODS:
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - OpenTok (2.12.1)
+
+DEPENDENCIES:
+  - Mantle
+  - OpenTok
+
+SPEC CHECKSUMS:
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  OpenTok: 869a96d84104b9de2b525c2e8a2a809561b47cec
+
+PODFILE CHECKSUM: b2dfa5dcd64ec1b08b1e0b35ebcd86d8710e719d
+
+COCOAPODS: 1.3.1
