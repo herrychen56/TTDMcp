@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="autoLoginButton" destination="49" id="54"/>
+                <outlet property="checkRememberButton" destination="47" id="53"/>
+                <outlet property="loginBtn" destination="18" id="1wu-Av-F69"/>
+                <outlet property="logoImageView" destination="51" id="UIM-Py-uvF"/>
+                <outlet property="passwordField" destination="10" id="57"/>
+                <outlet property="usernameField" destination="4" id="58"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="w9A-kU-6Bd">
+                    <rect key="frame" x="20" y="50" width="335" height="587"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="51">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="1n0-Rf-bT7"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pd8-4I-U22">
+                            <rect key="frame" x="0.0" y="103" width="335" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to ThinkTank Learning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BU-MV-THD">
+                                    <rect key="frame" x="54.5" y="14.5" width="227" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="V9q-eD-bdr"/>
+                                <constraint firstItem="4BU-MV-THD" firstAttribute="centerX" secondItem="pd8-4I-U22" secondAttribute="centerX" id="nlk-vc-dqt"/>
+                                <constraint firstItem="4BU-MV-THD" firstAttribute="centerY" secondItem="pd8-4I-U22" secondAttribute="centerY" id="p2e-q0-d3C"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4" customClass="TTDTextField">
+                            <rect key="frame" x="0.0" y="156" width="335" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="MT1-rf-pSk"/>
+                            </constraints>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="10" customClass="TTDTextField">
+                            <rect key="frame" x="0.0" y="194" width="335" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="egU-ZB-sUm"/>
+                            </constraints>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIi-sE-4Dp">
+                            <rect key="frame" x="0.0" y="232" width="335" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="u49-w5-tjn">
+                                    <rect key="frame" x="10" y="5" width="315" height="25"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47">
+                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="25"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                            <state key="normal" title="  Remember password" image="checkbox.png">
+                                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" title="  Remember password" image="checkbox_s.png"/>
+                                            <connections>
+                                                <action selector="checkAction:" destination="-1" eventType="touchUpInside" id="55"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49">
+                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="25"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <state key="normal" title="  Auto Login" image="checkbox.png">
+                                                <color key="titleColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" title="  Auto Login" image="checkbox_s.png"/>
+                                            <state key="highlighted">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="checkAction:" destination="-1" eventType="touchUpInside" id="56"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="u49-w5-tjn" firstAttribute="leading" secondItem="pIi-sE-4Dp" secondAttribute="leading" constant="10" id="3JD-Al-9vf"/>
+                                <constraint firstAttribute="trailing" secondItem="u49-w5-tjn" secondAttribute="trailing" constant="10" id="7P9-cu-9fk"/>
+                                <constraint firstAttribute="bottom" secondItem="u49-w5-tjn" secondAttribute="bottom" constant="20" id="8fe-ak-5fh"/>
+                                <constraint firstItem="u49-w5-tjn" firstAttribute="top" secondItem="pIi-sE-4Dp" secondAttribute="top" constant="5" id="Imf-9N-OAd"/>
+                                <constraint firstAttribute="height" constant="50" id="PQ6-Yi-82u"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                            <rect key="frame" x="0.0" y="285" width="335" height="40"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="VwJ-20-Rfk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Log In">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" title="Loading..."/>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="login:" destination="-1" eventType="touchUpInside" id="43"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmc-B5-bRC">
+                            <rect key="frame" x="0.0" y="328" width="335" height="259"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright @ 2017 ThinkTank Learning, Inc. All Right Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzw-XJ-Mv8">
+                                    <rect key="frame" x="0.0" y="244.5" width="335" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="nzw-XJ-Mv8" secondAttribute="bottom" id="4it-vL-5AS"/>
+                                <constraint firstItem="nzw-XJ-Mv8" firstAttribute="leading" secondItem="kmc-B5-bRC" secondAttribute="leading" id="UKV-uc-AI7"/>
+                                <constraint firstAttribute="trailing" secondItem="nzw-XJ-Mv8" secondAttribute="trailing" id="kfp-dT-ViL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="w9A-kU-6Bd" secondAttribute="trailing" constant="20" id="8GJ-nS-424"/>
+                <constraint firstItem="w9A-kU-6Bd" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="XZ6-oi-JAf"/>
+                <constraint firstItem="w9A-kU-6Bd" firstAttribute="top" secondItem="1" secondAttribute="top" constant="50" id="n9U-Tc-KKB"/>
+                <constraint firstAttribute="bottom" secondItem="w9A-kU-6Bd" secondAttribute="bottom" constant="30" id="zR1-cK-7Jy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="9oO-RR-y8K" appends="YES" id="J2Y-jE-8FF"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+        <tapGestureRecognizer id="9oO-RR-y8K">
+            <connections>
+                <action selector="touchView:" destination="-1" id="3bH-9I-vFz"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="checkbox.png" width="12" height="13"/>
+        <image name="checkbox_s.png" width="12" height="13"/>
+        <image name="launch_logo.png" width="160" height="86"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

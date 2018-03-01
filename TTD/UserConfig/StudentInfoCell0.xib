@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="127" id="2" customClass="StudentInfoCell0">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="Vjd-aF-BqV">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="150.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="06/11/2013" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                        <rect key="frame" x="150.5" y="24.5" width="63" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_addPhoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="12" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="LjK-I6-LOO"/>
+                            <constraint firstAttribute="height" constant="30" id="vht-6s-pT6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Jon Siapno" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                        <rect key="frame" x="50" y="23" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Interview:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                        <rect key="frame" x="50" y="7" width="63" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="248" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                        <rect key="frame" x="0.0" y="48" width="250" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vrr-6e-XIC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="247" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14">
+                        <rect key="frame" x="10" y="57" width="245" height="87"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="14" firstAttribute="top" secondItem="13" secondAttribute="bottom" constant="8" id="2ER-9i-FOf"/>
+                    <constraint firstItem="11" firstAttribute="leading" secondItem="10" secondAttribute="leading" id="3TX-7A-1PX"/>
+                    <constraint firstItem="11" firstAttribute="leading" secondItem="9" secondAttribute="trailing" constant="8" id="64T-IL-6v2"/>
+                    <constraint firstItem="13" firstAttribute="leading" secondItem="Vjd-aF-BqV" secondAttribute="leadingMargin" constant="-8" id="7iS-ot-ddz"/>
+                    <constraint firstItem="10" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="-1" id="MXr-Sb-Zrw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="13" secondAttribute="trailing" constant="10" id="T8y-IG-32h"/>
+                    <constraint firstItem="13" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="8" id="U8C-Hk-qqj"/>
+                    <constraint firstItem="9" firstAttribute="top" secondItem="Vjd-aF-BqV" secondAttribute="topMargin" constant="-1" id="cWm-pS-1Su"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="14" secondAttribute="bottom" constant="-1.5" id="d6e-bg-BFe"/>
+                    <constraint firstItem="14" firstAttribute="leading" secondItem="Vjd-aF-BqV" secondAttribute="leadingMargin" constant="2" id="dT0-eB-BJR"/>
+                    <constraint firstItem="12" firstAttribute="leading" secondItem="10" secondAttribute="trailing" constant="29" id="g0M-Rc-DpV"/>
+                    <constraint firstItem="12" firstAttribute="centerY" secondItem="10" secondAttribute="centerY" id="k3i-Gz-G6T"/>
+                    <constraint firstItem="9" firstAttribute="leading" secondItem="Vjd-aF-BqV" secondAttribute="leadingMargin" constant="4" id="oDD-pM-4tr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="14" secondAttribute="trailing" constant="5" id="zeS-3g-6Or"/>
+                    <constraint firstItem="11" firstAttribute="top" secondItem="9" secondAttribute="top" id="zuo-NN-gex"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgStuPhoto" destination="9" id="eI3-6e-xbZ"/>
+                <outlet property="lblStuInfo" destination="14" id="15"/>
+                <outlet property="lblStuName" destination="10" id="16"/>
+                <outlet property="lblTime" destination="12" id="17"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="54.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_addPhoto.png" width="35" height="35"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
